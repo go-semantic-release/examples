@@ -13,6 +13,7 @@ type HooksLogger struct {
 }
 
 func (t *HooksLogger) Init(m map[string]string) error {
+	t.logger.Printf("init: %v\n", m)
 	return nil
 }
 
